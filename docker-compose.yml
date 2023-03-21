@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  dalai:
+    build:
+      context: .
+      args:
+        MODEL_VERSION: ${MODEL_VERSION}
+        MODEL_NAME: ${MODEL_NAME}
+    ports:
+      - "${PORT}"
